@@ -1,3 +1,45 @@
-h1 {
-  color: #7C4A7C;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D9B8D9;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #7C4A7C;
+    margin-bottom: 10px;
+}
+
+/*
+These are hopefully the working specifics for the top bar...
+*/
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 60px;
+    background-color: #FFFFFF;
+    color: #C8A2C8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.top-bar nav a {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+body.with-top-bar {
+    padding-top: 80px; 
 }

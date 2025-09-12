@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #D9B8D9;
+    background-color: #eeeeee;
     color: #000000;
     margin: 0;
     padding: 20px;
@@ -13,7 +13,6 @@ h1, h2, h3 {
 
 /*
 These are hopefully the working specifics for the top bar...
-Of course this would be too easy
 */
 .top-bar {
     position: fixed;

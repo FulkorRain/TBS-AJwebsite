@@ -13,6 +13,7 @@ h1, h2, h3 {
 
 /*
 These are hopefully the working specifics for the top bar...
+Of course this would be too easy
 */
 .top-bar {
     position: fixed;

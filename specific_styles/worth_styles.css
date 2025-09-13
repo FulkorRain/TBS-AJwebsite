@@ -11,3 +11,12 @@
 .worth-images img:hover{
     transform: scale(1.05);
 }
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+    margin-top: 20px;
+}

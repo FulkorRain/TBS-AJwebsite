@@ -6,6 +6,7 @@
   <title>Item worth guide</title>
   <link rel="stylesheet" href="style.css"> <!-- Included the CSS file here, the reste is just general setup -->
   <link rel="stylesheet" href="specific_styles/worth_styles.css"> <!-- Specific stylesheet for Worths -->
+  <script src="specific_javascript/worth_javascript.js" defer></script> <!-- adds the javascript file to this HTML-->
 </head>
 <body class="with-top-bar">
 
@@ -21,12 +22,32 @@
     </nav>
   </div>
   <div class="worth-images">
-  <img src="images/item_worth_images/alphas.png" width="350" height="250">
-  <img src="images/item_worth_images/leilani.png" width="350" height="250">
-  <img src="images/item_worth_images/rare_betas.png" width="350" height="250">
-  <img src="images/item_worth_images/promos.png" width="350" height="250">
+  <img src="images/item_worth_images/alphas.png" data-section="alphas" width="350" height="250">
+  <img src="images/item_worth_images/leilani.png" data-section="leilani" width="350" height="250">
+  <img src="images/item_worth_images/rare_betas.png" data-section="rare_betas" width="350" height="250">
+  <img src="images/item_worth_images/promos.png" data-section="promos" width="350" height="250">
   </div>
-  <div>
+  <div class="worth-content">
+    <div id="alphas" class="section active">
+      <h2></h2>
+      <p></p>
+      a
+    </div>
+    <div id="leilani" class="section">
+      <h2></h2>
+      <p></p>
+      b
+    </div>
+    <div id="rare_betas" class="section">
+      <h2></h2>
+      <p></p>
+      c
+    </div>
+    <div id="promos" class="section">
+      <h2></h2>
+      <p></p>
+      d
+    </div>
     
   </div>
 </body>

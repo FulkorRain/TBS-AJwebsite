@@ -1,0 +1,13 @@
+.worth-images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.worth-images img{
+    cursor:pointer;
+    transition: transform 0.2s;
+}
+
+.worth-images img:hover{
+    transform: scale(1.05);
+}

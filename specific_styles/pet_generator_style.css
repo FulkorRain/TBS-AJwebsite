@@ -1,0 +1,73 @@
+#pet-generator {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#pet-generator form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#pet-generator label {
+    font-weight: 600;
+    color: #7C4A7C;
+    margin-bottom: 4px;
+}
+
+#pet-generator select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+#pet-generator select:focus {
+    outline: none;
+    border-color: #C8A2C8;
+    background: #fff;
+}
+
+.color-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#generate-btn {
+    background: #C8A2C8;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+#generate-btn:hover {
+    background: #a373a3;
+}
+
+#pet-result {
+    margin-top: 20px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    white-space: pre-wrap; 
+    font-family: monospace;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,22 @@
+.worth-images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.worth-images img{
+    cursor:pointer;
+    transition: transform 0.2s;
+}
+
+.worth-images img:hover{
+    transform: scale(1.05);
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+    margin-top: 20px;
+}

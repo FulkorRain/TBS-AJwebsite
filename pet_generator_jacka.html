@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet generator</title>
+  <link rel="stylesheet" href="style.css"> <!-- Included the CSS file here, the reste is just general setup -->
+  <link rel="stylesheet" href="specific_styles/pet_generator_style.css"> <!-- Specific stylesheet for Worths -->
+  <script src="specific_javascript/pet_generator_jacka.js" defer></script> <!-- adds the javascript file to this HTML -->
+</head>
+<body class="with-top-bar">
+
+  <div class="top-bar">
+    <h1>Pet generator for Jackalopes</h1>
+    <nav>
+        <a href="pet_generator.html">Pet generator</a>
+        <a href="drawing_studio.html">Drawing studio</a>
+        <a href="item_worth_guide.html">Item worth guide</a>
+        <a href="mini_games.html">Mini games</a>
+        <a href="community_hub.html">Community Hub<a>
+        <a href="trade_tracker.html">Trade tracker</a>
+    </nav>
+  </div>
+<div id="pet-generator">
+  <form id="pet-form">
+
+    <div class="color-group">
+      <label for="color-group-1">Primary color:</label>
+      <select id="color-group-1" name="color-group-1"></select>
+      <select id="color-1" name="color-1" class="hidden"></select>
+    </div>
+
+    <div class="color-group">
+      <label for="color-group-2">Secondary color:</label>
+      <select id="color-group-2" name="color-group-2"></select>
+      <select id="color-2" name="color-2" class="hidden"></select>
+    </div>
+
+    <div class="color-group">
+      <label for="color-group-3">Tertiary colors:</label>
+      <select id="color-group-3" name="color-group-3"></select>
+      <select id="color-3" name="color-3" class="hidden"></select>
+    </div>
+
+    <div class="color-group">
+      <label for="color-group-eye">Eye color:</label>
+      <select id="color-group-eye" name="color-group-eye"></select>
+      <select id="eye-color" name="eye-color" class="hidden"></select>
+    </div>
+
+    <label for="eye-shape">Eye Shape:</label>
+    <select id="eye-shape" name="eye-shape">
+      <option value="">-- Choose --</option>
+      <option value="swirly">Swirly</option>
+      <option value="xeye">X-eye</option>
+      <option value="spooky">Spooky</option>
+      <option value="suspicious">Suspicious</option>
+      <option value="starry">Starry</option>
+      <option value="blank">Blank</option>
+      <option value="lovely">Lovely</option>
+      <option value="creepy">Creepy</option>
+      <option value="surprised">Surprised</option>
+      <option value="striking">Striking</option>
+      <option value="ordinary">Ordinary</option>
+      <option value="cute">Cute</option>
+    </select>
+
+    <label for="pattern">Pattern:</label>
+    <select id="pattern" name="pattern">
+      <option value="">-- Choose --</option>
+      <option value="fleetfoot">Fleetfoot</option>
+      <option value="freckeled">Freckeled</option>
+      <option value="sable">Sable</option>
+      <option value="cryptic">Cryptic</option>
+      <option value="swift">Swift (rare)</option>
+      <option value="harlequin">Harlequin (epic)</option>
+    </select>
+
+    <label for="tails">Tails:</label>
+    <select id="tails" name="tails">
+      <option value="">-- Choose --</option>
+      <option value="spry">Spry</option>
+      <option value="blithe">Blithe</option>
+      <option value="angora">Angora</option>
+      <option value="velveteen">Velveteen</option>
+      <option value="rosebud">Rosebud (rare)</option>
+      <option value="delicate">Delicate (epic)</option>
+    </select>
+
+    <label for="antlers">Antlers:</label>
+    <select id="antlers" name="antlers">
+      <option value="">-- Choose --</option>
+      <option value="subtle">Subtle</option>
+      <option value="highlander">Highlander</option>
+      <option value="lunar">Lunar</option>
+      <option value="burly">Burly</option>
+      <option value="spring">Spring (rare)</option>
+      <option value="almiraj">Al-Mir'aj (epic)</option>
+    </select>
+
+    <label for="ears">Ears:</label>
+    <select id="ears" name="ears">
+      <option value="">-- Choose --</option>
+      <option value="wary">Wary</option>
+      <option value="tipped">Tipped</option>
+      <option value="alert">Alert</option>
+      <option value="dreamy">Dreamy</option>
+      <option value="whimsical">Whimsical (rare)</option>
+      <option value="fae">Fae (epic)</option>
+    </select>
+
+    <label for="elements">Elements:</label>
+    <select id="elements" name="elements">
+      <option value="">-- Choose --</option>
+      <option value="earthen">Earthen</option>
+      <option value="leafy">Leafy</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+      <option value="arcane">Arcane</option>
+      <option value="lunar">Lunar</option>
+    </select>
+
+    <label for="partial">Partial Effect:</label>
+    <select id="partial" name="partial">
+      <option value="">-- Choose --</option>
+      <option value="p_corrupted">Corrupted</option>
+      <option value="p_darkside">Dark sided</option>
+      <option value="p_lightside">Light sided</option>
+      <option value="p_glitter">Glitter</option>
+      <option value="p_gummy">Gummy</option>
+      <option value="p_glacier">Glacier</option>
+      <option value="p_galaxy">Galaxy</option>
+      <option value="p_golden_g">Golden Galaxy</option>
+      <option value="p_rainbow_g">Rainbow Galaxy</option>
+    </select>
+
+    <label for="size">Size:</label>
+    <select id="size" name="size">
+      <option value="">-- Choose --</option>
+      <option value="normal">Normal</option>
+      <option value="size_s">S (rare)</option>
+      <option value="size_l">L (rare)</option>
+      <option value="size_xs">XS (epic)</option>
+      <option value="size_xl">XL (epic)</option>
+    </select>
+
+    <label for="wings">Wings:</label>
+    <select id="wings" name="wings">
+      <option value="">-- Choose --</option>
+      <option value="curious">Curious</option>
+      <option value="sparrow">Sparrow</option>
+    </select>
+
+    <label for="full-effect">Full Effect:</label>
+    <select id="full-effect" name="full-effect">
+      <option value="">-- Choose --</option>
+      <option value="f_corrupted">Corrupted</option>
+      <option value="f_darkside">Dark sided</option>
+      <option value="f_lightside">Light sided</option>
+      <option value="f_glitter">Glitter</option>
+      <option value="f_gummy">Gummy</option>
+      <option value="f_glacier">Glacier</option>
+      <option value="f_galaxy">Galaxy</option>
+      <option value="f_golden_g">Golden Galaxy</option>
+      <option value="f_rainbow_g">Rainbow Galaxy</option>
+    </select>
+
+    <button type="button" id="generate-btn">Generate Pet</button>
+  </form>
+
+  <div id="pet-result"></div>
+</div>
+</body>
+</html>

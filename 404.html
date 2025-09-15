@@ -1,0 +1,39 @@
+<!-- This is not working on Liveserver! Not sure if its working on the GitHub Preview -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Page not found — 404</title>
+  <link rel="stylesheet" href="specific_styles/error_404_style.css"> <!-- Specific stylesheet for Page not found -->
+</head>
+<body>
+  <div class="error-wrap">
+    <div class="error-card">
+      <div class="error-top"></div>
+
+      <div class="error-content">
+        <h1>404 - Page not found</h1>
+        <p>Looks like the page you tried to open doesn't exist.</p>
+
+        <div class="error-actions">
+          <a href="index.html" class="btn">Go to Home</a>
+          <button id="go-back" class="btn ghost">Go back</button>
+        </div>
+
+        <p class="hint">If you followed a link, it may be outdated. If you clicked on a linked part on the website please report this so it can be fixed.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('go-back').addEventListener('click', function () {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
+</body>
+</html>

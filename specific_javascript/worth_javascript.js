@@ -15,7 +15,7 @@
       img: "images/item_worth_images/dj_headsets.webp",
       variations: [
          { type: "Clashing colors", price: "1 White bowtie / 315k Sapphires", demand: "Very low"},
-         { type: "Neons", price: "2-3 White bowties", demand: " Medium"},
+         { type: "Neons", price: "2-3 White bowties", demand: "Medium"},
          { type: "Color on color", price: "2-4 White bowties", demand: "Medium"},
          { type: "Pastels", price: "4 Bowties", demand: "Medium"},
          { type: "Pure colors", price: "4-6+ White bowties", demand: "High"}

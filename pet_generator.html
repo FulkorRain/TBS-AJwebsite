@@ -5,26 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet generator</title>
   <link rel="stylesheet" href="style.css"> <!-- Included the CSS file here, the reste is just general setup -->
+  <link rel="stylesheet" href="specific_styles/pet_generator_menu.css"> <!-- Specific stylesheet for Pet genrator menu -->
 </head>
 <body class="with-top-bar">
-
   <div class="top-bar">
     <h1>Pet generator</h1>
     <nav>
-        <a href="pet_generator.html">Pet generator</a>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="pet_generator.html">Pet generator</a>
+            <ul class="dropdown-menu">
+                <li><a href="pet_generator_dragon.html">Dragon</a></li>
+                <li><a href="pet_generator_uni.html">Unicorn</a></li>
+                <li><a href="pet_generator_griffin.html">Griffin</a></li>
+                <li><a href="pet_generator_jacka.html">Jackalope</a></li>
+            </ul>
+        </div>
         <a href="drawing_studio.html">Drawing studio</a>
         <a href="item_worth_guide.html">Item worth guide</a>
         <a href="mini_games.html">Mini games</a>
-        <a href="community_hub.html">Community Hub<a>
+        <a href="community_hub.html">Community Hub</a>
         <a href="trade_tracker.html">Trade tracker</a>
     </nav>
   </div>
-  Just added some quick things for CSS, but not the finished version<br>
-  <a href="pet_generator_dragon.html">Dragon</a>
-  <a href="pet_generator_griffin.html">Griffin</a>
-  <a href="pet_generator_jacka.html">Jackalope</a>
-  <a href="pet_generator_uni.html">Unicorn</a><br>
-  The specific traits and such are for every one of them the Jackalope traits right now. The color list can be made once and added to all<br>
-  They have seperate js files, but they are the same. Just added them for the correct links
+  <div class="row-box-grid">
+  <div class="row-custom-box">
+    <div class="row-box-top"></div>
+    <img src="image_dragon" alt="Image">
+    <a href="pet_generator_dragon.html" class="row-box-btn">Dragon</a>
+  </div>
+
+  <div class="row-custom-box">
+    <div class="row-box-top"></div>
+    <img src="image_uni" alt="Image">
+    <a href="pet_generator_uni.html" class="row-box-btn">Unicorn</a>
+  </div>
+
+  <div class="row-custom-box">
+    <div class="row-box-top"></div>
+    <img src="image_griffin" alt="Image">
+    <a href="pet_generator_griffin.html" class="row-box-btn">Griffin</a>
+  </div>
+
+  <div class="row-custom-box">
+    <div class="row-box-top"></div>
+    <img src="image_jacka" alt="Image">
+    <a href="pet_generator_jacka.html" class="row-box-btn">Jackalope</a>
+  </div>
+</div>
+
 </body>
 </html>

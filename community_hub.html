@@ -7,26 +7,18 @@
   <link rel="stylesheet" href="style.css"> <!-- Included the CSS file here, the reste is just general setup -->
 </head>
 <body class="with-top-bar">
-  <div class="top-bar">
-    <h1>Community Hub</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <a href="pet_generator.html">Pet generator</a>
-            <ul class="dropdown-menu">
-                <li><a href="pet_generator_dragon.html">Dragon</a></li>
-                <li><a href="pet_generator_uni.html">Unicorn</a></li>
-                <li><a href="pet_generator_griffin.html">Griffin</a></li>
-                <li><a href="pet_generator_jacka.html">Jackalope</a></li>
-            </ul>
-        </div>
-        <a href="drawing_studio.html">Drawing studio</a>
-        <a href="item_worth_guide.html">Item worth guide</a>
-        <a href="mini_games.html">Mini games</a>
-        <a href="community_hub.html">Community Hub</a>
-        <a href="trade_tracker.html">Trade tracker</a>
-    </nav>
-  </div>
+<script>
+  const pageTitle = "Community Hub"; //defining title to auto include in the top bar
+</script>
+  <div id="navbar-container"></div>
   Community Hub placeholder
+<script>
+  fetch('html_elements/top_bar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-container').innerHTML = data;
+      document.querySelector('#navbar-container h1').textContent = pageTitle;
+    });
+</script>
 </body>
 </html>

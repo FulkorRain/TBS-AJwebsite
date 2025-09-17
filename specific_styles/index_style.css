@@ -1,3 +1,5 @@
+@import url('../style.css'); /*This is to import the colors and font*/
+
 .menu-box-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -7,7 +9,7 @@
 }
 
 .menu-custom-box {
-  background: #ffffff;
+  background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.08);
   display: flex;
@@ -24,7 +26,7 @@
 .menu-box-top {
   width: 100%;
   height: 8px; 
-  background: #7C4A7C; 
+  background: var(--accent-dark);
 }
 
 .menu-custom-box img {
@@ -37,7 +39,7 @@
   display: inline-block;
   margin: 15px 0;
   padding: 10px 20px;
-  background: #C8A2C8;
+  background: var(--accent);
   color: white;
   font-weight: 600;
   border-radius: 8px;
@@ -46,5 +48,5 @@
 }
 
 .menu-box-btn:hover {
-  background: #a373a3;
+  background: var(--accent-dark-hover);
 }

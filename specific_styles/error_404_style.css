@@ -1,26 +1,13 @@
-:root{
-  --accent-dark: #7C4A7C;
-  --accent: #C8A2C8;
-  --accent-dark-hover: #a373a3;
-  --bg-page: #f6f6f6;
-  --card-bg: #ffffff;
-  --text: #111;
-}
+@import url('../style.css');
 
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--bg-page);
-  color: var(--text);
+.error-wrap {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
   padding: 20px;
-  padding-top: 80px; 
+  box-sizing: border-box;
 }
 
 .error-top {
@@ -42,7 +29,6 @@ body {
   align-items: center;
   text-align: center;
   padding: 36px 28px;
-  padding: 0; 
 }
 
 .error-content h1 {
@@ -53,7 +39,7 @@ body {
 
 .error-content p {
   margin: 0 0 18px;
-  color: #333;
+  color: var(--text-secondary);
   font-size: 15px;
 }
 

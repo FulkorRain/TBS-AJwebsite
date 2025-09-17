@@ -1,28 +1,45 @@
+:root {
+    --accent-dark: #603913;
+    --accent: #F7931E;
+    --accent-dark-hover: #F15A24;
+    --accent-green: #39A935;
+    --accent-green-light: #8DC63F;
+    --card-bg: #ffffff;
+    --bg-page: #f6f6f6;
+    --text: #111;
+    --text-secondary: #333;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eeeeee;
-    color: #000000;
+    font-family: var(--font-family);
+    background-color: var(--bg-page);
+    color: var(--text);
     margin: 0;
     padding: 20px;
     padding-top: 80px;
 }
 
 h1, h2, h3 {
-    color: #7C4A7C;
+    color: var(--accent-dark);
     margin-bottom: 10px;
 }
 
-/*
-These are hopefully the working specifics for the top bar...
-*/
+p {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 0 0 10px;
+}
+
 .top-bar {
     position: fixed;
     top: 0;
     left: 0;
     width: 98%;
     height: 60px;
-    background-color: #FFFFFF;
-    color: #C8A2C8;
+    background-color: var(--card-bg);
+    color: var(--accent);
     display: flex;
     align-items: center; 
     justify-content: space-between;
@@ -34,7 +51,7 @@ These are hopefully the working specifics for the top bar...
 .top-bar h1 {
     margin: 0;
     font-size: 20px;
-    color: #7C4A7C;
+    color: var(--accent-dark);
 }
 
 .top-bar nav {
@@ -46,14 +63,14 @@ These are hopefully the working specifics for the top bar...
 nav a {
     text-decoration: none;
     font-weight: 500;
-    color: #7C4A7C;
+    color: var(--accent-dark);
     padding: 8px 12px;
     display: block;
     transition: background 0.2s ease;
 }
 
 nav a:hover {
-    background: #C8A2C8;
+    background: var(--accent);
     color: #fff;
     border-radius: 6px;
 }
@@ -72,13 +89,12 @@ nav a:hover {
   background: transparent; 
 }
 
-
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background: #fff;
+    background: var(--card-bg);
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     list-style: none;
@@ -93,12 +109,12 @@ nav a:hover {
 
 .dropdown-menu a {
     padding: 8px 16px;
-    color: #7C4A7C;
+    color: var(--accent-dark);
     font-weight: 400;
 }
 
 .dropdown-menu a:hover {
-    background: #C8A2C8;
+    background: var(--accent);
     color: #fff;
 }
 

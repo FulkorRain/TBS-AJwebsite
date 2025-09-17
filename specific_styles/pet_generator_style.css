@@ -1,5 +1,7 @@
+@import url('../style.css'); /*This is to import the colors and font*/
+
 #pet-generator {
-    background: #ffffff;
+    background: var(--card-bg);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -15,7 +17,7 @@
 
 #pet-generator label {
     font-weight: 600;
-    color: #7C4A7C;
+    color: var(--accent-dark);
     margin-bottom: 4px;
 }
 
@@ -30,7 +32,7 @@
 
 #pet-generator select:focus {
     outline: none;
-    border-color: #C8A2C8;
+    border-color: var(--accent);
     background: #fff;
 }
 
@@ -46,7 +48,7 @@
 }
 
 #generate-btn {
-    background: #C8A2C8;
+    background: var(--accent);
     color: white;
     font-weight: 600;
     border: none;
@@ -58,7 +60,7 @@
 }
 
 #generate-btn:hover {
-    background: #a373a3;
+    background: var(--accent-dark-hover);
 }
 
 #pet-result {

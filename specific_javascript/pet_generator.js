@@ -4,12 +4,12 @@
 //data object for the colors
 const colorGroups = {
     "": [],
-    "Amethyst Wildflower": ["1", "2", "3", "4"],
+    "Amethyst Wildflower": ["#8B73AB", "#BCABD2", "#9F73AB", "#CAABD2", "#704C79", "#A671AC", "#BC8DBF", "#794C6D", "#AB7399", "#A08395", "#977B87", "#906073"],
     "Dusty Taupe": ["5", "6", "7", "8"],
     "Florid Vermillion": ["9", "10", "11", "12"],
     "Lush Berry": ["13", "14", "15", "16"],
     "Opulent Royal": ["17", "18", "19", "20"],
-    "Russet Mahogany": ["21", "22", "23", "24"],
+    "Russet Mahogany": ["#500909", "#7F0707", "#5E0404", "#681818", "#6E342B", "#441E05", "#5D3B48", "#77394A", "#5D1023", "#6F1A2E", "#46101C"],
     "Smoky Dust": ["25", "26", "27", "28"],
     "Vibrant Neon": ["29", "30", "31", "32"],
     "Cerulean Sky": ["33", "34", "35", "36"],

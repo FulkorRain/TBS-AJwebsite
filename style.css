@@ -5,10 +5,12 @@
     --accent-green: #39A935;
     --accent-green-light: #8DC63F;
     --card-bg: #ffffff;
-    --bg-page: #f6f6f6;
+    --bg-page: #1e6150;
     --text: #111;
     --text-secondary: #333;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --gold-gradient: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
 
 body {

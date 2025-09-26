@@ -4,11 +4,15 @@ body {
 .worth-images{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .worth-images img{
     cursor:pointer;
     transition: transform 0.2s;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
 }
 
 .worth-images img:hover{
@@ -131,4 +135,32 @@ body {
   height: 100px;
   position: relative;
   top: 20px;
+}
+
+@media (max-width: 900px) {
+  .grid-worth-layout {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-worth-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-worth-layout {
+    display: flex;             /* switch from grid to flex */
+    flex-wrap: nowrap;         /* keep items in one row */
+    overflow-x: auto;          /* allow horizontal scrolling */
+    gap: 12px;
+    padding: 10px;
+    scroll-snap-type: x mandatory; /* smooth snap scroll */
+  }
+
+  .grid-worth-layout .box {
+    flex: 0 0 80%; /* each item takes 80% of the viewport width */
+    scroll-snap-align: start;  /* snap to edges when scrolling */
+  }
 }

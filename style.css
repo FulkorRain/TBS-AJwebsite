@@ -40,7 +40,7 @@ p {
     left: 0;
     width: 98%;
     height: 60px;
-    background-color: var(--card-bg);
+    background: linear-gradient(#8A4411 , #A0653B , #D0884A );
     color: var(--accent);
     display: flex;
     align-items: center; 

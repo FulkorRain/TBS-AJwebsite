@@ -17,6 +17,17 @@
                      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
 
+/* This HIDES scrollbar */
+/* For Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none; /* hide scrollbar */
+}
+
 body {
     font-family: var(--font-family);
     background-color: var(--bg-page);

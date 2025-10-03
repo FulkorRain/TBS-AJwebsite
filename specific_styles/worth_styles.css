@@ -151,16 +151,16 @@ body {
 
 @media (max-width: 600px) {
   .grid-worth-layout {
-    display: flex;             /* switch from grid to flex */
-    flex-wrap: nowrap;         /* keep items in one row */
-    overflow-x: auto;          /* allow horizontal scrolling */
+    display: flex;     
+    flex-wrap: nowrap;    
+    overflow-x: auto;
     gap: 12px;
     padding: 10px;
-    scroll-snap-type: x mandatory; /* smooth snap scroll */
+    scroll-snap-type: x mandatory; 
   }
 
   .grid-worth-layout .box {
-    flex: 0 0 80%; /* each item takes 80% of the viewport width */
-    scroll-snap-align: start;  /* snap to edges when scrolling */
+    flex: 0 0 80%; 
+    scroll-snap-align: start;  
   }
 }

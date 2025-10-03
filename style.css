@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/tikiisland');
+
+
 :root {
     --accent-dark: #603913;
     --accent: #F7931E;
@@ -9,6 +12,7 @@
     --text: #111;
     --text-secondary: #333;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-tiki: 'TikiIsland';
     --gold-gradient: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
                      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
@@ -65,10 +69,12 @@ p {
 nav a {
     text-decoration: none;
     font-weight: 500;
-    color: var(--accent-dark);
     padding: 8px 12px;
     display: block;
     transition: background 0.2s ease;
+    font-family: 'TikiIsland';
+    font-size: 34px;
+    color: #ffe3c5;
 }
 
 nav a:hover {

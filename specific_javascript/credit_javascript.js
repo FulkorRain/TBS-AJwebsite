@@ -19,12 +19,12 @@ const artists = [
     name: "Cheeky",
     ajUser: "Cheeky346",
     socials: {
-      toyhouse: "https://toyhou.se/cheeky346"
+      youtube: "https://www.youtube.com/channel/UCxqLOALmQarzBJiyYuFmWoA"
     },
     images: [
-      "images/credit_images/cheeky346_1.jpeg",
-      "images/credit_images/cheeky346_2.jpeg",
-      "images/credit_images/cheeky346_3.jpeg"
+      "images/credit_images/cheeky346_1.webp",
+      "images/credit_images/cheeky346_2.webp",
+      "images/credit_images/cheeky346_3.webp"
     ]
   },
   {
@@ -34,9 +34,9 @@ const artists = [
       reddit: "https://www.reddit.com/user/Upper-Blackberry144"
     },
     images: [
-      "images/credit_images/augustnova_1.jpeg",
-      "images/credit_images/augustnova_2.jpeg",
-      "images/credit_images/augustnova_3.jpeg"
+      "images/credit_images/augustnova_1.webp",
+      "images/credit_images/augustnova_2.webp",
+      "images/credit_images/augustnova_3.webp"
     ]
   },
   {
@@ -46,23 +46,21 @@ const artists = [
       instagram: "https://www.instagram.com/sweet_staars/"
     },
     images: [
-      "images/credit_images/hazelteaa_1.jpeg",
-      "images/credit_images/hazelteaa_2.jpeg",
-      "images/credit_images/hazelteaa_3.jpeg"
+      "images/credit_images/hazelteaa_1.webp",
+      "images/credit_images/hazelteaa_2.webp",
+      "images/credit_images/hazelteaa_3.webp"
     ]
   },
   {
     name: "Colacoveredcat",
     ajUser: "Colacoveredcat",
     socials: {
-      twitter: "https://twitter.com/lulutopia",
-      instagram: "https://instagram.com/lulutopia_art",
       reddit: "https://www.reddit.com/user/Nervous_Scallion_980"
     },
     images: [
-      "images/credit_images/colacoveredcatart_1.jpeg",
-      "images/credit_images/colacoveredcatart_2.jpeg",
-      "images/credit_images/colacoveredcatart_3.jpeg"
+      "images/credit_images/colacoveredcatart_1.webp",
+      "images/credit_images/colacoveredcatart_2.webp",
+      "images/credit_images/colacoveredcatart_3.webp"
     ]
   },
   {
@@ -72,9 +70,9 @@ const artists = [
       reddit: "https://www.reddit.com/user/Its_OpalAJ"
     },
     images: [
-      "images/credit_images/opal4autumnfox_1.jpeg",
-      "images/credit_images/opal4autumnfox_2.jpeg",
-      "images/credit_images/opal4autumnfox_3.jpeg"
+      "images/credit_images/opal4autumnfox_1.webp",
+      "images/credit_images/opal4autumnfox_2.webp",
+      "images/credit_images/opal4autumnfox_3.webp"
     ]
   },
   {
@@ -84,9 +82,8 @@ const artists = [
       twitter: "https://twitter.com/0kappii"
     },
     images: [
-      "images/credit_images/stillmango_1.jpeg",
-      "images/credit_images/stillmango_2.jpeg",
-      "images/credit_images/stillmango_3.jpeg"
+      "images/credit_images/stillmango_1.webp",
+      "images/credit_images/stillmango_2.webp",
     ]
   }
 ];
@@ -113,7 +110,10 @@ window.addEventListener('DOMContentLoaded', () => {
       socials.push(`<a href="${artist.socials.twitter}" class="fa fa-twitter target="_blank"></a>`);
     if (artist.socials.instagram)
       socials.push(`<a href="${artist.socials.instagram}" class="fa fa-instagram target="_blank"></a>`);
-
+    if (artist.socials.reddit)
+      socials.push(`<a href="${artist.socials.reddit}" class="fa fa-reddit target="_blank"></a>`);
+    if (artist.socials.youtube)
+      socials.push(`<a href="${artist.socials.youtube}" class="fa fa-youtube target="_blank"></a>`);
     
     const selectedImages = artist.images.slice(0, maxImages);
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css"> <!-- Included the CSS file here, the reste is just general setup -->
+  <link rel="stylesheet" href="specific_styles/credit_style.css">
+  <script src="specific_javascript/credit_javascript.js"></script>
+</head>
+<body class="with-top-bar">
+<script>
+  const pageTitle = "Credits"; //defining title to auto include in the top bar
+</script>
+  <div id="navbar-container"></div>
+  <div class="credit-box">
+    <!-- Ok so basically this is how it's gonna work:
+     This div is split into multiple div sections, each section is a box
+     each artist gets their own box which has their name, aj username
+     and socials (represented by social buttons) as well as 1 - 3 images 
+     depending on the size of the screen (of the device being used to view website)
+     it'll show 1 if small aka mobile, 2 if medium aka ipad / small laptops, and if big -->
+
+
+  </div>
+<script>
+  fetch('html_elements/top_bar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-container').innerHTML = data;
+      document.querySelector('#navbar-container h1').textContent = pageTitle;
+    });
+</script>
+</body>
+</html>

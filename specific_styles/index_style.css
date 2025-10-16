@@ -1,15 +1,25 @@
 @import url('../style.css'); /*This is to import the colors and font*/
 
+body {
+  padding: 0px;
+  padding-top: 80px;
+}
+
+.menu-box-wrapper {
+  background: #1a332d;
+  width: 100%;
+}
+
 .menu-box-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; 
-  max-width: 1200px;
-  margin: 40px auto;
+  gap: 75px; 
+  max-width: 1300px;
+  margin: 200px auto;
 }
 
 .menu-custom-box {
-  background: var(--card-bg);
+  background: linear-gradient(#8A4411 , #A0653B , #D0884A );
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.08);
   display: flex;
@@ -39,7 +49,7 @@
   display: inline-block;
   margin: 15px 0;
   padding: 10px 20px;
-  background: var(--accent);
+  background: #f77c10;
   color: white;
   font-weight: 600;
   border-radius: 8px;
@@ -49,4 +59,34 @@
 
 .menu-box-btn:hover {
   background: var(--accent-dark-hover);
+}
+
+.grass {
+  background: url("https://ajwebcdn1.akamaized.net/assets/2.0/site/theme/spring_22/edge_foliage_footer-888bcb832e84b867697d387853a8fc3292f312609f72b142c5d4249929a2ac29.svg") no-repeat center bottom;
+  background-size: contain;
+  height: 200px;
+  position: relative;
+  top: 200px;
+}
+
+.flippedgrass {
+  background: url("https://ajwebcdn1.akamaized.net/assets/2.0/site/theme/spring_22/edge_foliage_footer-888bcb832e84b867697d387853a8fc3292f312609f72b142c5d4249929a2ac29.svg") no-repeat center bottom;
+  background-size: contain;
+  height: 200px;
+  position: relative;
+  bottom: 200px;
+
+  transform: scaleY(-1); /* flips it vertically */
+}
+
+@media(max-width: 1025px){
+  .menu-box-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width: 675px){
+  .menu-box-grid{
+    grid-template-columns: repeat(1,1fr);
+  }
 }

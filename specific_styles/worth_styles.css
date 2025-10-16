@@ -124,7 +124,7 @@ body {
 }
 
 .grass {
-  background: url("https://ajwebcdn1.akamaized.net/assets/2.0/site/theme/spring_22/edge_foliage_footer-888bcb832e84b867697d387853a8fc3292f312609f72b142c5d4249929a2ac29.svg") no-repeat center bottom;
+  background: url("../images/grass vector.svg") no-repeat center bottom;
   background-size:cover;
   height: 100px;
   position: relative;

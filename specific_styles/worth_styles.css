@@ -158,3 +158,34 @@ body {
     scroll-snap-align: start;  
   }
 }
+
+.input-container{
+  position: relative;
+  display: inline-block;
+  width: 400px;
+}
+.write-board{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#search-input {
+  width:70%;
+  padding: 10px 15px;
+  font-size: 18px;
+  z-index: 1;
+  background: transparent;
+  outline: none;
+  border: none;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  display: block;
+}

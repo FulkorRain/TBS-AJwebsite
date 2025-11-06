@@ -987,3 +987,17 @@ lightbox.addEventListener("click", (e) => {
     lightbox.style.display = "none";
   }
 });
+
+const searchInput = document.getElementById('search-input');
+searchInput.addEventListener('input', function(){
+  const query = searchInput.value.toLowerCase();
+  const activeSection = document.querySelector('.section.active');
+  const boxes = activeSection.querySelectorAll('.box');
+
+  boxes.forEach(box => {
+    const itemName = box.querySelector('h3').textContent.toLowerCase();
+    const variationText = box.querySelector('ul').textContent.toLowerCase();
+    const matches = itemName.includes(query) || variationText.includes(query);
+    box.style.display = matches ? '' : 'none';
+  });
+});
